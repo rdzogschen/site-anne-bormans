@@ -4,8 +4,7 @@ Site vitrine statique (HTML + CSS + un peu de JavaScript). Pas de base de donné
 
 ## Voir le site sur son ordinateur
 
-1. **Une seule fois** : double-cliquer sur `recuperer-images.bat` (Windows) ou lancer `sh recuperer-images.sh` (Mac). Le script copie le logo et les photos depuis le site actuel dans `assets/img/`. À faire **avant** la fin du contrat Simplébo.
-2. Ouvrir `index.html` dans un navigateur.
+Ouvrir `index.html` dans un navigateur.
 
 ## Organisation des fichiers
 
@@ -19,7 +18,7 @@ Site vitrine statique (HTML + CSS + un peu de JavaScript). Pas de base de donné
 | `plan-du-site.html`, `mentions-legales.html` | Pages légales |
 | `assets/css/style.css` | Toute la mise en forme. Couleurs et polices en haut du fichier. |
 | `assets/js/main.js` | Menu mobile, onglets, « Afficher le téléphone », formulaire |
-| `assets/img/` | Logo et photos |
+| `assets/img/logo.png` | Logo (seule image du site, à la demande de Me Bormans) |
 
 Les noms des pages reprennent les adresses de l'ancien site (bon pour Google).
 
@@ -39,5 +38,6 @@ Chaque modification enregistrée dans le dépôt est en ligne 1 à 2 minutes plu
 ## Consignes pour Claude (modifications)
 
 - L'en-tête, les deux menus (ordinateur + mobile), le bloc « Informations pratiques » et le pied de page sont **recopiés dans chaque page** : une modification de téléphone, d'adresse ou de menu doit être faite dans **tous** les fichiers `.html`.
-- Réutiliser les classes existantes (`section bg-gris / bg-noir / bg-brique`, `title`, `media`, `card`, `box`, `checks`, `btn`) plutôt que d'ajouter du style en ligne.
+- Pas de photos sur le site (choix de Me Bormans) : seulement le logo.
+- Réutiliser les classes existantes (`section bg-gris / bg-noir / bg-brique`, `title`, `text-block`, `card`, `box`, `checks`, `btn`) plutôt que d'ajouter du style en ligne.
 - Une nouvelle page = copier une page existante, changer `<title>`, `<meta name="description">`, le `<h1>` et le contenu de `<main>`, puis l'ajouter aux menus, au pied de page si besoin et à `plan-du-site.html`.
