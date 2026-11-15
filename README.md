@@ -38,6 +38,7 @@ Chaque modification enregistrée dans le dépôt est en ligne 1 à 2 minutes plu
 ## Consignes pour Claude (modifications)
 
 - L'en-tête, les deux menus (ordinateur + mobile), le bloc « Informations pratiques » et le pied de page sont **recopiés dans chaque page** : une modification de téléphone, d'adresse ou de menu doit être faite dans **tous** les fichiers `.html`.
+- Après toute modification de `style.css` ou `main.js`, changer le numéro `?v=…` de leur lien dans **toutes** les pages (sinon les navigateurs gardent l'ancienne version en mémoire).
 - Pas de photos sur le site (choix de Me Bormans) : seulement le logo.
 - Réutiliser les classes existantes (`section bg-gris / bg-noir / bg-brique`, `title`, `text-block`, `card`, `box`, `checks`, `btn`) plutôt que d'ajouter du style en ligne.
 - Une nouvelle page = copier une page existante, changer `<title>`, `<meta name="description">`, le `<h1>` et le contenu de `<main>`, puis l'ajouter aux menus, au pied de page si besoin et à `plan-du-site.html`.
