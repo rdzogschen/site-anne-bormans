@@ -24,7 +24,7 @@ Les noms des pages reprennent les adresses de l'ancien site (bon pour Google).
 
 ## Formulaire de contact
 
-Dans `contact-anne-pigeon-bormans-avocat-paris-8.html`, remplacer `VOTRE_CLE_WEB3FORMS` par la clé reçue par e-mail sur https://web3forms.com (gratuit). Les messages arrivent alors dans la boîte mail indiquée lors de la création de la clé.
+Le formulaire passe par Web3Forms (gratuit), compte **anne.bormans@gmail.com**, formulaire « Contact site avocat ». Les messages arrivent dans cette boîte mail. La clé (`access_key`) est dans `contact-anne-pigeon-bormans-avocat-paris-8.html`. Quand le domaine annebormansavocat.fr sera branché, mettre à jour le « Website URL » du formulaire dans le tableau de bord Web3Forms.
 
 ## Mise en ligne (GitHub Pages)
 
