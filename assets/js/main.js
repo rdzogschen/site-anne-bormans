@@ -55,10 +55,15 @@
       var btn = form.querySelector('button[type=submit]');
       btn.disabled = true;
       status.textContent = 'Envoi en cours…';
-      var data = new FormData(form);
-      data.set('subject', 'Site internet – ' + (data.get('Sujet') || 'Nouveau message'));
-      data.set('from_name', ((data.get('Prénom') || '') + ' ' + (data.get('Nom') || '')).trim());
-      fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
+      // Envoi en JSON (UTF-8) pour que les accents arrivent intacts dans l'e-mail
+      var data = Object.fromEntries(new FormData(form));
+      data.subject = 'Site internet – ' + (data['Sujet'] || 'Nouveau message');
+      data.from_name = ((data['Prénom'] || '') + ' ' + (data['Nom'] || '')).trim();
+      fetch(form.action, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' }
+      })
         .then(function (r) { return r.json(); })
         .then(function (res) {
           if (res.success) {
