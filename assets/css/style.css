@@ -55,7 +55,10 @@ ul{margin:0;padding:0;list-style:none}
 .mobile-bar,.mobile-menu{display:none}
 
 /* ---------- Bandeau photo (accueil) ---------- */
-.hero{background:var(--noir);padding:80px 0;display:flex;align-items:center}
+/* Photo des colonnes : Unsplash (licence libre, usage commercial autorisé), servie par leur CDN.
+   background-attachment:fixed = effet de défilement (l'image reste fixe pendant que la page défile). */
+.hero{height:617px;display:flex;align-items:center;
+  background:var(--noir) url("https://images.unsplash.com/photo-1590410051810-08d7d33f0322?w=2000&q=80&auto=format&fit=crop") center/cover no-repeat fixed}
 .hero .container{width:100%;display:flex;justify-content:flex-end}
 .hero-box{background:#fff;width:426px;padding:15px 25px 20px;margin:10px 0;text-align:right}
 .hero-box .title{margin-bottom:12px}
@@ -198,7 +201,7 @@ ul{margin:0;padding:0;list-style:none}
   .mobile-menu .submenu{display:none;background:#f7f7f7}
   .mobile-menu .submenu a{padding-left:35px;font-size:15px}
   .mobile-menu li.open>.submenu{display:block}
-  .hero{padding:12px 0}
+  .hero{height:auto;padding:60px 0;background-attachment:scroll}
   .hero-box{width:100%}
   .section{padding:35px 10px}
   .media,.media.reverse{grid-template-columns:1fr;gap:25px}
